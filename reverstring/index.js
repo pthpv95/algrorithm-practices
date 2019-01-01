@@ -15,12 +15,16 @@
 //     .join("");
 // }
 
+// function reverseString(src) {
+//   let reserved = "";
+//   for (let character of src) {
+//     reserved = character + reserved;
+//   }
+//   return reserved;
+// }
+
 function reverseString(src) {
-  let reserved = "";
-  for (let character of src) {
-    reserved = character + reserved;
-  }
-  return reserved;
+  return src.split("").reduce((acc, current) => current + acc, "");
 }
 
 module.exports = {
